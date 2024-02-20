@@ -1,0 +1,52 @@
+{
+    reachable-exception-global-state
+    Memcheck:Leak
+    match-leak-kinds: reachable
+    ...
+    fun:__cxa_get_globals
+    ...
+}
+
+{
+    invalid-read-valgrind-free
+    Memcheck:Addr8
+    fun:check_free
+    ...
+    fun:_vgnU_freeres
+    ...
+}
+
+{
+    reachable-ncurses-setup
+    Memcheck:Leak
+    match-leak-kinds: reachable
+    ...
+    fun:*alloc
+    ...
+    fun:initscr
+    ...
+}
+
+{
+    reachable-ncurses-allocations
+    Memcheck:Leak
+    match-leak-kinds: reachable
+    ...
+    fun:*alloc
+    ...
+    fun:*_nc*
+    ...
+}
+
+{
+    reachable-ncurses-refresh
+    Memcheck:Leak
+    match-leak-kinds: reachable
+    ...
+    fun:*alloc
+    ...
+    fun:doupdate*
+    fun:wrefresh
+    ...
+}
+
