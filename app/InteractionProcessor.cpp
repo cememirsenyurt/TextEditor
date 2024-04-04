@@ -51,28 +51,25 @@ void InteractionProcessor::run()
                 redoStack.push(undoStack.top());
                 undoStack.pop();
             }
-            else
-            {
-               
-            }
-
             view.refresh();
         }
         else if (interaction.type() == InteractionType::redo)
         {
             if(!redoStack.empty())
             {
-
-                redoStack.top()->undo(model);
-
-                undoStack.push(undoStack.top());
+                Command* command = redoStack.top();
                 redoStack.pop();
+        
+                try
+                {
+                    command->execute(model);
+                    undoStack.push(command);
+                }
+                catch (EditorException& e)
+                {
+                    model.setErrorMessage(e.getReason());
+                }
             }
-            else
-            {
-
-            }
-
             view.refresh();
         }
         else if (interaction.type() == InteractionType::command)
