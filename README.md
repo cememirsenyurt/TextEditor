@@ -1,6 +1,6 @@
 # TextEditor
 
-In the modern era of graphical user interfaces, the command line remains a potent tool for many professionals. The transition to text-based command-line tools can be challenging, yet rewarding, offering unparalleled efficiency and flexibility. This text editor embodies this philosophy, providing a streamlined text editing experience that harks back to the simplicity and power of traditional command-line editors.
+In the modern era of graphical user interfaces, the command line remains a useful tool for many professionals. The transition to text-based command-line tools can be challenging, yet rewarding, offering unparalleled efficiency and flexibility. This text editor embodies this philosophy, providing a streamlined text editing experience that harks back to the simplicity and power of traditional command-line editors.
 
 # Features
 
