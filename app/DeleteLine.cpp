@@ -14,7 +14,7 @@ void DeleteLine::execute(EditorModel& model)
 
 void DeleteLine::undo(EditorModel& model)
 {
-    std::cout << "HERE" << std::endl;        
+    model.EditorModel::insertLine();
 }
 
 
