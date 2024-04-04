@@ -1,8 +1,5 @@
 # TextEditor
 
-# Terminal Based Text Editor
-This powerful terminal-based text editor, crafted as part of the ICS45C course under the guidance of Professor Thornton at the University of California, Irvine. This project leverages the core concepts of C++ programming, including abstract classes, inheritance, and the Command pattern, to create an efficient text editing environment within the command line interface.
-
 # Introduction
 In the modern era of graphical user interfaces, the command line remains a potent tool for many professionals. The transition to text-based command-line tools can be challenging, yet rewarding, offering unparalleled efficiency and flexibility. This text editor embodies this philosophy, providing a streamlined text editing experience that harks back to the simplicity and power of traditional command-line editors.
 
